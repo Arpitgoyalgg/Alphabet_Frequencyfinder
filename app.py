@@ -1,10 +1,20 @@
+my_name = 'arpit'
+print("My name: "+my_name)
 given_str = input("Enter a string: ")
-set_alphabets = {}
 
-for i in given_str:
-    if i in set_alphabets:
-        set_alphabets[i] += 1
-    else:
-        set_alphabets[i] = 1
+set_alphabets_common = {'a': 0,'r': 0,'p': 0,'i': 0,'t': 0}
 
-print("frequency :\n "+ str(set_alphabets))
+for key in given_str:
+    if key == 'a':
+        set_alphabets_common[key] = set_alphabets_common[key]+1
+    if key == 'r':
+        set_alphabets_common[key] = set_alphabets_common[key]+1
+    if key == 'p':
+        set_alphabets_common[key] = set_alphabets_common[key]+1
+    if key == 'i':
+        set_alphabets_common[key] = set_alphabets_common[key]+1
+    if key == 't':
+        set_alphabets_common[key] = set_alphabets_common[key]+1
+
+
+print(set_alphabets_common)
